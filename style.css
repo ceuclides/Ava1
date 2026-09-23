@@ -1,0 +1,276 @@
+/* =========================================================
+   ARQUIVO: style.css
+   Este é o CSS EXTERNO exigido no enunciado.
+   Ele é "linkado" no <head> do HTML com:
+   <link rel="stylesheet" href="style.css">
+   ========================================================= */
+
+/* -----------------------------------------------------------
+   1. RESET BÁSICO
+   Navegadores diferentes aplicam margens/paddings padrão
+   diferentes. Zerando tudo, evitamos surpresas de layout.
+----------------------------------------------------------- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /* padding não aumenta a largura do elemento */
+}
+
+/* -----------------------------------------------------------
+   2. ESTILO GERAL DA PÁGINA (tag body)
+----------------------------------------------------------- */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #222831;
+  background-color: #f4f6f8;
+  line-height: 1.6; /* espaçamento entre linhas do texto */
+}
+
+/* -----------------------------------------------------------
+   3. CABEÇALHO (header)
+   Equivale ao antigo <div id="cabecalho"> das aulas passadas.
+----------------------------------------------------------- */
+header {
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    align-items: center;
+
+    width: 100%;
+    min-height: 150px;
+
+    padding: 0 40px;
+    box-sizing: border-box;
+
+    background-color: #031323;
+}
+
+header .logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+.logo-text span {
+    position: relative;
+    left: 20px;
+}
+header .logo span {
+  color: #2261C5; /* destaca parte do nome da empresa */
+}
+
+/* -----------------------------------------------------------
+   4. MENU DE NAVEGAÇÃO (nav)
+   Equivale ao antigo <div id="menu">.
+----------------------------------------------------------- */
+nav ul {
+  list-style: none; /* remove as bolinhas da lista */
+  display: flex;     /* coloca os itens do menu lado a lado */
+}
+
+/* espaço entre os itens do menu (mais compatível que "gap") */
+nav li + li {
+  margin-left: 24px;
+}
+
+nav a {
+  color: #ffffff;
+  text-decoration: none; /* remove o sublinhado do link */
+  font-weight: 500;
+}
+
+nav a:hover {
+  color: #2261C5; /* muda a cor quando o mouse passa por cima */
+}
+
+/* -----------------------------------------------------------
+   5. SEÇÃO DE DESTAQUE (hero) - primeira coisa que o usuário vê
+----------------------------------------------------------- */
+.hero {
+  background-color: #2261C5;
+  color: #ffffff;
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.hero h1 {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  font-size: 18px;
+}
+
+/* -----------------------------------------------------------
+   6. CONTEÚDO PRINCIPAL (main)
+   Equivale ao antigo <div id="conteudo">.
+----------------------------------------------------------- */
+main {
+  max-width: 1000px;
+  margin: 0 auto;   /* centraliza o conteúdo na página */
+  padding: 40px 20px;
+}
+
+/* título de cada seção dentro do main */
+main h2 {
+  color: #1B2A41;
+  margin-bottom: 16px;
+  border-left: 5px solid #2261C5; /* barrinha colorida do lado */
+  padding-left: 10px;
+}
+
+section {
+  margin-bottom: 50px;
+}
+
+/* -----------------------------------------------------------
+   7. LISTA DE DIFERENCIAIS
+----------------------------------------------------------- */
+.diferenciais {
+  padding-left: 20px;
+}
+
+.diferenciais li {
+  margin-bottom: 8px;
+}
+
+/* -----------------------------------------------------------
+   8. TABELA DE PLANOS
+----------------------------------------------------------- */
+table {
+  width: 100%;
+  border-collapse: collapse; /* junta as bordas das células */
+  background-color: #ffffff;
+}
+
+th, td {
+  border: 1px solid #cccccc;
+  padding: 12px;
+  text-align: left;
+}
+
+th {
+  background-color: #1B2A41;
+  color: #ffffff;
+}
+
+/* deixa a linha do plano "Premium" em destaque */
+.plano-destaque {
+  background-color: #e6fbfb;
+  font-weight: bold;
+}
+
+/* -----------------------------------------------------------
+   9. FORMULÁRIO DE CONTATO
+----------------------------------------------------------- */
+form {
+  background-color: #ffffff;
+  padding: 24px;
+  border-radius: 8px;
+  max-width: 500px;
+}
+
+form label {
+  display: block;        /* cada label numa linha separada */
+  margin-top: 14px;
+  margin-bottom: 4px;
+  font-weight: bold;
+}
+
+form input,
+form textarea,
+form select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #cccccc;
+  border-radius: 4px;
+  font-family: inherit; /* usa a mesma fonte do resto do site */
+}
+
+form button {
+  margin-top: 18px;
+  background-color: #2261C5;
+  color: #ffffff;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+form button:hover {
+  background-color: #2261C5;
+}
+
+/* -----------------------------------------------------------
+   10. BOTÕES COM IMAGEM (WhatsApp / E-mail)
+----------------------------------------------------------- */
+.contato-rapido {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.botao-imagem {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background-color: #ffffff;
+  border: 1px solid #cccccc;
+  padding: 10px 18px;
+  border-radius: 6px;
+  text-decoration: none;
+  color: #222831;
+}
+
+.botao-imagem:hover {
+  background-color: #eeeeee;
+}
+
+/* -----------------------------------------------------------
+   11. RODAPÉ (footer)
+   Equivale ao antigo <div id="rodape">.
+----------------------------------------------------------- */
+footer {
+  background-color: #1B2A41;
+  color: #ffffff;
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
+}
+
+
+
+.conteudo {
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center;     /* Centraliza verticalmente (opcional) */
+    min-height: 70vh;
+}
+
+form {
+    width: 450px;
+    background: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.2);
+}
+
+.servicos-imagens {
+    display: flex;
+    justify-content: center; /* Centraliza as imagens */
+    align-items: center;
+    gap: 20px; /* Espaço entre as imagens */
+    margin-top: 20px;
+}
+
+.servicos-imagens img {
+    width: 300px;
+    height: 200px;
+    object-fit: cover; /* Mantém a proporção e corta o excesso */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s;
+}
+
+.servicos-imagens img:hover {
+    transform: scale(1.05);
+}
