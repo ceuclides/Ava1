@@ -1,7 +1,4 @@
 
-/* ===========================
-   RESET
-=========================== */
 
 * {
     margin: 0;
@@ -9,9 +6,7 @@
     box-sizing: border-box;
 }
 
-/* ===========================
-   BODY
-=========================== */
+
 
 body {
     font-family: Arial, Helvetica, sans-serif;
@@ -20,9 +15,7 @@ body {
     line-height: 1.6;
 }
 
-/* ===========================
-   HEADER
-=========================== */
+
 
 header {
     display: grid;
@@ -39,9 +32,7 @@ header {
     display: block;
 }
 
-/* ===========================
-   MENU
-=========================== */
+
 
 nav {
     justify-self: center;
@@ -64,9 +55,7 @@ nav a:hover {
     color: #2261C5;
 }
 
-/* ===========================
-   HERO
-=========================== */
+
 
 .hero {
     background: linear-gradient(135deg, #2261C5, #17438d);
@@ -84,9 +73,7 @@ nav a:hover {
     font-size: 18px;
 }
 
-/* ===========================
-   MAIN
-=========================== */
+
 
 main {
     max-width: 1100px;
@@ -105,17 +92,13 @@ section h2 {
     margin-bottom: 18px;
 }
 
-/* ===========================
-   SOBRE
-=========================== */
+
 
 #sobre p {
     text-align: justify;
 }
 
-/* ===========================
-   DIFERENCIAIS
-=========================== */
+
 
 .diferenciais {
     padding-left: 25px;
@@ -125,9 +108,7 @@ section h2 {
     margin-bottom: 10px;
 }
 
-/* ===========================
-   SERVIÇOS
-=========================== */
+
 
 .servicos-imagens {
     display: flex;
@@ -150,9 +131,7 @@ section h2 {
     box-shadow: 0 6px 16px rgba(0,0,0,.3);
 }
 
-/* ===========================
-   TABELA
-=========================== */
+
 
 table {
     width: 100%;
@@ -177,9 +156,7 @@ th {
     font-weight: bold;
 }
 
-/* ===========================
-   FORMULÁRIO
-=========================== */
+
 
 .conteudo {
     display: flex;
@@ -234,9 +211,7 @@ form button:hover {
     background-color: #184d9e;
 }
 
-/* ===========================
-   CONTATO RÁPIDO
-=========================== */
+
 
 .contato-rapido {
     display: flex;
@@ -260,9 +235,7 @@ form button:hover {
     background-color: #eeeeee;
 }
 
-/* ===========================
-   FOOTER
-=========================== */
+
 
 footer {
     background-color: #1B2A41;
